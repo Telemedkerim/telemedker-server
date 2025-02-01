@@ -1,6 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const cors = require("cors");
+const cors = require("../middleware/cors");
 
 module.exports = (app) => {
   app.use("*", cors());

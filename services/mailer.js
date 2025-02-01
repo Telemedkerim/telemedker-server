@@ -1,4 +1,8 @@
+require("dotenv").config();
 const { SESClient, SendEmailCommand } = require("@aws-sdk/client-ses");
+const i18n = require("i18next");
+
+const { getConfirmEmailTemplate } = require("../emailTemplates/confirmEmail");
 
 // Create SES service client
 const sesClient = new SESClient({
@@ -9,13 +13,14 @@ const sesClient = new SESClient({
   },
 });
 
-/**
- * Send email using AWS SES
- * @param {string} to - Recipient email address
- * @param {string} subject - Email subject
- * @param {string} body - Email body (HTML)
- * @returns {Promise} - Returns a promise that resolves with the sending result
- */
+// /**
+//  * Send email using AWS SES
+//  * @param {string} to - Recipient email address
+//  * @param {string} subject - Email subject
+//  * @param {string} body - Email body (HTML)
+//  * @returns {Promise} - Returns a promise that resolves with the sending result
+//  */
+
 async function sendValidationEmail(email, token, locale) {
   const validationUrl = `${process.env.FRONTEND_DOMAIN}${locale}/validate-email?token=${token}`;
 
@@ -23,7 +28,7 @@ async function sendValidationEmail(email, token, locale) {
     const htmlContent = await getConfirmEmailTemplate(validationUrl, locale);
 
     const params = {
-      Source: "Pickup2 <no-reply@pickup2.com>",
+      Source: "Telemediker <info@telemediker.com>",
       Destination: {
         ToAddresses: [email],
       },

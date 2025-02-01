@@ -1,0 +1,21 @@
+{
+  "email": {
+    "confirmEmail": {
+        "title": "Confirm Your Email!",
+        "greeting": "Hello Telemediker User!",
+        "message": "We're excited to have you on board! Before we get started, we need you to confirm your Email.",
+        "description": "Thank you for joining Telemediker, your trusted partner for efficient and reliable</br> logistics solutions. To complete your registration and start using our platform,</br> please confirm your email by clicking the link below:",
+        "closing": "Welcome to the future of logistics with <strong>Telemediker</strong>!</br>",
+        "buttonText": "Confirm"
+      },
+
+      "emailFooter": {
+        "regards": "Best regards,",
+        "team": "The <strong>Telemediker</strong> Team",
+        "allRightsReserved": "​Telemediker © {{year}} Telemediker, Inc. All Rights Reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Use",
+        "visitUs": "Visit us"
+      }
+  }
+}

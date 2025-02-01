@@ -1,0 +1,20 @@
+{
+  "email": {
+    "confirmEmail": {
+        "title": "Bestätigen Sie Ihre E-Mail!",
+        "greeting": "Hallo Telemediker-Nutzer!",
+        "message": "Wir freuen uns, Sie an Bord zu haben! Bevor wir loslegen, müssen wir Ihre E-Mail bestätigen.",
+        "description": "Vielen Dank, dass Sie sich für Telemediker entschieden haben, Ihren vertrauenswürdigen Partner für effiziente und<br />zuverlässige Logistiklösungen. Um Ihre Registrierung abzuschließen und unsere Plattform nutzen zu können,<br />bestätigen Sie bitte Ihre E-Mail, indem Sie auf den folgenden Button klicken:",
+        "closing": "Willkommen in der Zukunft der Logistik mit <strong>Telemediker</strong>!<br />",
+        "buttonText": "Bestätigen"
+      },
+      "emailFooter": {
+        "regards": "Mit freundlichen Grüßen,",
+        "team": "Das <strong>Telemediker</strong>-Team",
+        "allRightsReserved": "Telemediker © {{year}} Telemediker, Inc. Alle Rechte vorbehalten.",
+        "privacyPolicy": "Datenschutzbestimmungen",
+        "termsOfService": "Nutzungsbedingungen",
+        "visitUs": "Besuchen Sie uns"
+      }
+  }
+}

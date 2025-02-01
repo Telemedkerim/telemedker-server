@@ -124,6 +124,9 @@ const userSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+
+  isEmailValidated: { type: Boolean, default: false },
+  refreshToken: String,
 });
 
 const User = mongoose.model("User", userSchema);
