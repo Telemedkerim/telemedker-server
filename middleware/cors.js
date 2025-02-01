@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = () => (req, res, next) => {
   if (req.originalUrl === "/payment/webhook") {
     return next();
@@ -5,6 +7,7 @@ module.exports = () => (req, res, next) => {
   const corsWhitelist = [
     "http://localhost:3001",
     "https://pickup2.netlify.app",
+    process.env.FRONTEND_DOMAIN,
     "http://localhost:8888/",
   ];
 
